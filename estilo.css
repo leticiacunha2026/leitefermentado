@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+body {
+  background: #e0d5a3;
+  padding: 15px 0;
+}
+
+.nav {
+  font-family: 'Titillium Web';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: rgba(51, 56, 49, 0.473);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #eee4c8;
+  border-right: 3px solid #50462c;
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #50462c;
+  border-left: 3px solid #eee4c8;
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #574a29;
+}
+
+.text-container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    margin: 30px 15%;
+    border-radius: 30px;
+    background-color: #e2d088;
+    border: 3px solid black;
+}
+
+.text-container #imgs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-container #imgs2 {
+  display: flex;
+  gap: 50px;
+}
+
+.text-container #imgs2 p{
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: justify;
+  margin: auto 0;
+  width: 50%;
+}
+
+img {
+  border-radius: 30px;
+  border: 2px solid black;
+}
+
+hr {
+  margin-top: 10%;
+  border: 1px solid black;
+}
